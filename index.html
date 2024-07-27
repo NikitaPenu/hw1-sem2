@@ -32,7 +32,7 @@
               <a href="#" class="web-pages">Студіо</a>
             </li>
             <li>
-              <a href="#" class="web-pages">Портфоліо</a>
+              <a href="./portfolio.html" class="web-pages">Портфоліо</a>
             </li>
             <li>
               <a href="#" class="web-pages">Контакти</a>
@@ -43,14 +43,14 @@
           <li>
             <a href="mailto:info@devstudio.com" class="header-contact">
               <svg width="16" height="12" class="header-icon">
-                <use href="./icons/symbol-defs.svg#icon-email"></use>
+                <use href="./icons/symbol-defs-1.svg#icon-email"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
             <svg width="10" height="16" class="header-icon">
-              <use href="./icons/symbol-defs.svg#icon-mobil"></use>
+              <use href="./icons/symbol-defs-1.svg#icon-mobil"></use>
             </svg>
             <a href="tel:+380961111111" class="header-contact">+38 096 111 11 11</a>
           </li>
@@ -61,9 +61,57 @@
       <section class="bussines">
         <div class="container">
           <h1 class="bussines-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="bussines-button">
+          <button type="button" class="bussines-button" data-modal-open>
             Замовити послугу
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" href="" class="exit-button" data-modal-close>
+                <svg width="11" height="11" class="exit-icon">
+                <use href="./icons/symbol-defs-modal.svg#icon-Exit"></use>
+              </svg>
+              </button>
+              <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+              <form class="modal-form">
+                <ul class="modal-list">
+                  <li class="modal-item">
+                    <label for="name" class="modal-text">Ім'я</label>
+                    <input type="text" class="modal-input" name="" id="name">
+                    <svg width="18" height="18" class="modal-icon">
+                      <use href="./icons/symbol-defs-modal.svg#icon-Person"></use>
+                    </svg>
+                  </li>
+                  <li class="modal-item">
+                    <label for="tel" class="modal-text">Телефон</label>
+                    <input type="tel" class="modal-input" name="" id="tel">
+                    <svg width="18" height="18" class="modal-icon">
+                      <use href="./icons/symbol-defs-modal.svg#icon-Telefon"></use>
+                    </svg>
+                  </li>
+                  <li class="modal-item">
+                    <label for="email" class="modal-text">Пошта</label>
+                    <input type="email" class="modal-input" name="" id="email">
+                    <svg width="18" height="18" class="modal-icon">
+                      <use href="./icons/symbol-defs-modal.svg#icon-Email"></use>
+                    </svg>
+                  </li>
+                  <li class="modal-item">
+                    <p class="modal-text">Коментар</p>
+                    <textarea name="" id="" class="modal-area" placeholder="Введіть текст"></textarea>
+                  </li>
+                  <li class="modal-item">
+                    <div class="agree-wrapper">
+                      <input type="checkbox" class="modal-checkbox">
+                    <p class="agree-text">Погоджуюся з розсилкою та приймаю 
+                      <a href="#" class="modal-link">Умови договору</a>
+                    </p>
+                    </div>        
+                  </li>
+                </ul>
+                <button class="modal-button">Відправити</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       <section class="web-attention">
@@ -72,7 +120,7 @@
             <li class="web-item">
               <div class="web-item-icon-wrapper">
                 <svg width="70" height="70" class="icons">
-                  <use href="./icons/symbol-defs.svg#icon-antenna"></use>
+                  <use href="./icons/symbol-defs-1.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="web-title-info">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -84,7 +132,7 @@
             <li class="web-item">
               <div class="web-item-icon-wrapper">
                 <svg width="70" height="70" class="icons">
-                  <use href="./icons/symbol-defs.svg#icon-clock"></use>
+                  <use href="./icons/symbol-defs-1.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="web-title-info">ПУНКТУАЛЬНІСТЬ</h3>
@@ -96,7 +144,7 @@
             <li class="web-item">
               <div class="web-item-icon-wrapper">
                 <svg width="70" height="70" class="icons">
-                  <use href="./icons/symbol-defs.svg#icon-notebook"></use>
+                  <use href="./icons/symbol-defs-1.svg#icon-notebook"></use>
                 </svg>
               </div>
               <h3 class="web-title-info">ПЛАНУВАННЯ</h3>
@@ -107,7 +155,7 @@
             <li class="web-item">
               <div class="web-item-icon-wrapper">
                 <svg width="70" height="70" class="icons">
-                  <use href="./icons/symbol-defs.svg#icon-astronaut"></use>
+                  <use href="./icons/symbol-defs-1.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="web-title-info">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
@@ -154,28 +202,28 @@
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -193,28 +241,28 @@
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -232,28 +280,28 @@
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -271,28 +319,28 @@
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="teamets-item">
                   <a href="" class="teammates-link">
                     <svg width="20" height="20" class="teammates-icon">
-                      <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                      <use href="./icons/symbol-defs-1.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -308,42 +356,42 @@
           <li class="clients-item">
             <a href="" class="clients-link">
               <svg width="106" height="60" class="clients-icon">
-                <use href="./icons/symbol-defs.svg#icon-firstclient"></use>
+                <use href="./icons/symbol-defs-1.svg#icon-firstclient"></use>
               </svg>
             </a>
           </li>
           <li class="clients-item">
             <a href="" class="clients-link">
               <svg width="106" height="60" class="clients-icon">
-                <use href="./icons/symbol-defs.svg#icon-secondclient"></use>
+                <use href="./icons/symbol-defs-1.svg#icon-secondclient"></use>
               </svg>
             </a>
           </li>
           <li class="clients-item">
             <a href="" class="clients-link">
               <svg width="106" height="60" class="clients-icon">
-                <use href="./icons/symbol-defs.svg#icon-thirdclient"></use>
+                <use href="./icons/symbol-defs-1.svg#icon-thirdclient"></use>
               </svg>
             </a>
           </li>
           <li class="clients-item">
             <a href="" class="clients-link">
               <svg width="106" height="60" class="clients-icon">
-                <use href="./icons/symbol-defs.svg#icon-fourthclient"></use>
+                <use href="./icons/symbol-defs-1.svg#icon-fourthclient"></use>
               </svg>
             </a>
           </li>
           <li class="clients-item">
             <a href="" class="clients-link">
               <svg width="106" height="60" class="clients-icon">
-                <use href="./icons/symbol-defs.svg#icon-fifthclient"></use>
+                <use href="./icons/symbol-defs-1.svg#icon-fifthclient"></use>
               </svg>
             </a>
           </li>
           <li class="clients-item">
             <a href="" class="clients-link">
               <svg width="106" height="60" class="clients-icon">
-                <use href="./icons/symbol-defs.svg#icon-sixthclient"></use>
+                <use href="./icons/symbol-defs-1.svg#icon-sixthclient"></use>
               </svg>
             </a>
           </li>
@@ -377,28 +425,28 @@
             <li class="join-item">
               <a href="" class="join-link">
                 <svg width="20" height="20" class="footer-icon">
-                  <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                  <use href="./icons/symbol-defs-1.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="join-item">
               <a href="" class="join-link">
                 <svg width="20" height="20" class="footer-icon">
-                  <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                  <use href="./icons/symbol-defs-1.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="join-item">
               <a href="" class="join-link">
                 <svg width="20" height="20" class="footer-icon">
-                  <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                  <use href="./icons/symbol-defs-1.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="join-item">
               <a href="" class="join-link">
                 <svg width="20" height="20" class="footer-icon">
-                  <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                  <use href="./icons/symbol-defs-1.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -417,5 +465,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
