@@ -68,9 +68,16 @@ img {
   color: #212121;
   text-align: center;
   padding: 32px 0 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .web-pages:hover {
   color: #2196f3;
+}
+.web-pages::after {
+  border-radius: 2px;
+width: 48px;
+height: 4px;
+background: #2196f3;
 }
 .info {
   display: flex;
@@ -87,6 +94,7 @@ img {
   color: #757575;
   letter-spacing: 0.02em;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact:hover {
   color: #2196f3;
@@ -171,6 +179,10 @@ img {
   align-items: center;
   justify-content: center;
 }
+.exit-icon {
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .exit-icon:hover {
   fill: #2196f3;
 }
@@ -215,6 +227,7 @@ img {
   top: 35px;
   left: 20px;
   position: absolute;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon:hover {
   fill: #2196f3;
@@ -236,6 +249,7 @@ img {
   width: 16px;
   height: 15px;
   fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-checkbox:hover {
   fill: #2196f3;
@@ -401,6 +415,7 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: background-color 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teammates-link:hover {
   background-color: #2196f3;
@@ -447,9 +462,6 @@ img {
 .clients-item {
   flex-basis: calc((100% - 150px) / 6);
 }
-.clients-link:hover {
-  border: 1px solid #2196f3;
-}
 .clients-link {
   display: flex;
   align-items: center;
@@ -457,6 +469,10 @@ img {
   border: 1px solid #757575;
   border-radius: 3px;
   height: 92px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-link:hover {
+  border: 1px solid #2196f3;
 }
 .clients-link:hover .clients-icon {
   fill: #2196f3;
@@ -520,6 +536,7 @@ img {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-link:hover {
   background-color: #2196f3;
@@ -628,6 +645,7 @@ img {
   color: #212121;
   border-radius: 4px;
   border: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   background-color: #2196f3;
@@ -641,6 +659,7 @@ img {
 }
 .project-item {
   flex-basis: calc((100% - 2 * 30px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-item:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
